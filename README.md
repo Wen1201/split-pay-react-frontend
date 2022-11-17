@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# ** Split Pay **
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p> Split Pay is an interactive web application which allows users to create groups, and split bills within each group. Within the payments model, it allows users to see and track all transactions, and settle expenses once paid. </p>
 
-## Available Scripts
+You can find the link to the Split Pay website [here](https://split-pay.netlify.app/). 
 
-In the project directory, you can run:
+You can find the Mongoose DB backend repo [here](https://github.com/mdak2806/split-pay-express-backend).
 
-### `npm start`
+## Project Overview
+As part of the Software Engineering Immersive program, as General Assembly Project #3 was designed to challenge students to create a website using technologies of their own choice, from what they have learnt thus far. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Due to our groups interest in finance, we decided to create a Split-wise clone, which allowed the tracking and settling of expenses. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+We decided to also utilise a new technology Mongoose DB as our backend server and create a React Hooks Front-End (previously used components based). 
 
-### `npm test`
+![Split Pay Home Page Interface](/build/Split%20Pay%20App.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Logins:
 
-### `npm run build`
+Users:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Email: craig@gmail.com
+* Password: chicken
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Email: wen@gmail.com
+* Password: chicken
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Email: kris@gmail.com
+* Password: chicken
 
-### `npm run eject`
+* Email: luke@gmail.com
+* Password: chicken
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Wireframe and page associations
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Below is an image highlighting the high-level associations between the different pages on the Split Pay Website.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Split Pay Associations](/build/Split-pay-wireframe.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Sign in/Sign out
 
-## Learn More
+2. Password Encryption
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. JSON data providing connection to React front end
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Create User Profile for full site access
 
-### Code Splitting
+5. Create and name your new group
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. Create a group expense
 
-### Analyzing the Bundle Size
+7. Settle expenses in payments section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies Used ##
 
-### Making a Progressive Web App
+Mongoose DB main backend technology used, and React.js was the main front-end technology utilised. The following technologies where also used:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Mongoose DB
+2. CSS 
+3. HTML & ERB
+4. MongoDB Cloud Atlas
+5. Netlify
+6. React
+7. Cors
+8. Bcrypt
+9. JWT
 
-### Advanced Configuration
+## Project Status
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The project is approximately 80% complete, all essential components are running, although our initial intentions was to create a check-out system connecting a user’s back details to their Split-pay account, and thus allowing direct debts and deposits directly on the same application. 
 
-### Deployment
+This would take the Split-wise ideal to the next level, and allow a more user friendly, and more useful product overall. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Furthermore, payments section could be split into two separate pages (Payments and Expenses) to create a distinction between a payee (money owed) and payer (money owing) payments. 
 
-### `npm run build` fails to minify
+### Project Future Improvements 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] *Split payments section into two pages, payee(money owed), and payer(money owing).*
+- [ ] *Adjust CSS to allow the dynamic list of payments that do not overflow onto the footer.* 
+- [ ] *Adding a dynamic currency system allowing users to select the currency of the payment.*
+- [ ] *Allow users to only select group members based on contact details instead of the full list of Split-wise users.* 
+- [ ] *Better utilise the categories to allow users to track overall expenses based on there activities. * 
